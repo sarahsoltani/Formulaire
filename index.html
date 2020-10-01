@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td{border: solid black 1px;}
+    form{
+        margin-top: 50px;
+        margin-left: 400px;
+    }
+</style>
+<body>
+   <form >
+       <table>
+           <tr>
+               <div>
+               <td rowspan="8"> Fiche Personnelle</td> </div>
+               <div> <td>Nom</td>
+                <td><input type="text" name="name" required
+                    maxlength="20" ></td>
+                <tr>
+                <td>Prénom</td>
+                <td><input type="text" name="prénom"  maxlength="20"></td>
+            </tr>
+                <tr>
+                <td>Date de naissance</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Sexe</td>
+                <td>
+                <input type="radio" id="femme" name="gender" value="femme">
+                <label for="Femme">Femme</label>
+                <input type="radio" id="Homme" name="gender" value="Homme">
+                <label for="femme">Homme</label>
+            </td>
+            </tr>
+            </div>
+               
+           </tr>
+           <tr>
+               <td>Adresse Mail</td>
+             
+               <td>  <input type="email" id="email" name="email" ></td>
+           </tr>
+           <tr>
+               <td>Téléphone</td>
+              
+               <td> <input type="number" name="Téléphone"  ></td>
+           </tr> 
+           <tr>
+            <td>Profession</td>
+      <td>
+            <select id="cars" name="carlist" form="carform">
+                <option value="">choose an option</option>
+                <option value="étudiant"> étudiant</option>
+                <option value="enseignant"> enseignant</option>
+                <option value="ingénieur">ingénieur</option>
+                
+              </select></td>
+        </tr>
+        <tr>
+            <td >Adresse</td>
+            <td>
+                <textarea  name="Adresse" rows="7" cols="40">
+     
+      </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Préférences</td>
+
+        </tr>
+        <tr>
+            <td >choisisez  votre Style de Musique</td>
+<td style="line-height: 30px;">
+    <input type="checkbox" id="scales" name="scales" >
+  <label for="scales">Rap</label>
+  <input type="checkbox" id="scales" name="scales">
+  <label for="scales"> electronic</label><br>
+  <input type="checkbox" id="scales" name="scales" >
+  <label for="scales">Jazz</label>
+  
+    <input type="checkbox" id="scales" name="scales">
+  <label for="scales">Classique</label><br>
+  <input type="checkbox" id="scales" name="scales">
+  <label for="scales">Rock</label>
+  <input type="checkbox" id="scales" name="scales">
+  <label for="scales">Soule</label>
+
+</td>
+
+
+        </tr>
+        <tr>
+        <td rowspan="7">Information de Connexion</td></tr>
+        <tr>
+            <td>Login</td>
+            <td><input type="text" name="Login" ></td></tr>
+        <tr>
+        <td>Mot de passe</td>
+        <td><input type="password" name="password" ></td></tr>
+        <tr>
+        <td>Confirmation de mot de passe</td>
+        <td><input type="password" name="password" ></td></tr>
+        <td><input type="submit" name="envoyer" value="Envoyer" ></td>
+        <td> <input type="button" value="Annuler"></td>
+      
+       </table>
+   </form>
+</body>
+</html>
